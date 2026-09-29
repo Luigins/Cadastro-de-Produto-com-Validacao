@@ -21,8 +21,7 @@ Este projeto consiste em uma aplicação web simples desenvolvida em **PHP**, **
 
 - **Frontend:** HTML5
 - **Backend:** PHP 8.x
-- **Banco de Dados:** MySQL / MariaDB
-- **Ambiente Recomendado:** XAMPP, WAMP, Laragon ou MySQL Server local
+- **Banco de Dados:** MySQL 
 
 ---
 
@@ -33,10 +32,10 @@ Antes de rodar a aplicação, certifique-se de criar o banco de dados `exercicio
 Execute o script SQL abaixo no seu gerenciador de banco de dados (ex: phpMyAdmin, DBeaver, MySQL Workbench):
 
 ```sql
-CREATE DATABASE IF NOT EXISTS exercicio;
+CREATE DATABASE exercicio;
 USE exercicio;
 
-CREATE TABLE IF NOT EXISTS produtos (
+CREATE TABLE produtos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     preco DECIMAL(10, 2) NOT NULL,
